@@ -1,7 +1,12 @@
 # freehand-svg-draw
-Draw with mouse or fingers vector SVG paths. Basic functionality, just colors and fixed brush width. Has minimal user interface with undo, clearn and download buttons. 
+Draw with mouse or fingers vector SVG paths. 
 
-Works fine on mobile and desktop. Made for VueJS. Canvas size defined with css. 
+- Basic functionality, just colors and fixed brush width
+- Minimal user interface with undo, clearn and download buttons
+- Works fine on mobile and desktop
+- Canvas size defined with css
+
+Made for VueJS. 
 
 ![Svg pencil Draw Vuejs in browser](https://artrayd.com/freehand-svg/freehand-svg-ui.png)
 
