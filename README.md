@@ -37,5 +37,5 @@ npm run test
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Known problems
-- When cursor comes out of canvas container, it throws error - but it doesn't affect on functionality.
+- When cursor comes out of canvas container, it throws error - but it doesn't affect functionality
 - If not scrolled to the top, mouse cursor distance is not calculated correctly and trace path appears in the wrong place
