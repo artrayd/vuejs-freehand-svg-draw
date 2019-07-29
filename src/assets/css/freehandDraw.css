@@ -1,0 +1,304 @@
+ .canvas{
+    width: 720px;
+    height: 480px;
+    position: relative;
+    cursor: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+  }
+
+  .canvas h2{
+    position: absolute;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }    
+
+.canvas .drawSvg{
+  width: 100%;
+  height: 100%;
+}
+
+.draw .buttons{
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-start;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.draw .showButtons{
+  opacity: 1;
+}
+
+.draw .btn{
+  color: #fff;
+  background: none;
+  position: relative;
+  border: none;
+  margin-left: 0;
+  font-size: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity .2s;
+  margin-right: 8px;
+}
+
+.draw .btn:hover{
+  opacity: 1; 
+}
+
+.draw .btn:focus{
+  border: none;
+  outline: none;
+}
+
+.draw .undoBtn{
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+.draw .toolbar{
+  position: fixed;
+/*  right: 0;*/
+  display: flex;
+  background: #2E2F30;
+  border-radius: 6px 0 0 6px;
+  padding: 12px;
+  top: 52%;
+  transform: translateY(-52%);
+  transition: 0.3s ease;
+}
+
+.draw .toolbar:hover{
+  right: 0!important;
+}
+
+.draw .toolbar .allColors ul{
+  display: flex;
+  flex-direction: row;
+  padding-left: 24px;
+}
+
+
+.draw .toolbar li{
+  width: 40px;
+  height: 40px;
+  list-style: none;
+  margin-top: 18px;
+  margin-right: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba( 255, 255, 255, .2);
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.draw .toolbar .bgColor li{
+  border-radius: 8px;
+}
+
+.draw .toolbar .activeColor{
+  border: 1px solid rgba( 255, 255, 255, .5);
+  transform: scale(1.15);
+  margin-right: 60px;
+}
+
+.draw  .toolbar li::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  display: block;
+  height: 40px;
+  width: 0;
+  background: #434345;
+  transition: all .3s ease-out;
+}
+
+.draw .toolbar .activeColor::after{ 
+  content: '';
+  position: absolute;
+  right: -30px;
+  display: block;
+  height: 40px;
+  width: 1px;
+  background: #434345;
+}
+
+
+#cursor{
+  top: 50%;
+  left: 50%;
+}
+
+#cursor, .dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  position: absolute;
+  opacity: .5;
+  pointer-events: none;
+  transition: opacity .1s ease-in-out;
+
+}
+
+.drawSvg rect{
+  transition: fill .2s;
+}
+
+.draw ul li.bgColor{
+  border-radius: 4px;
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+
+  body, html{
+    background: #2E2F30 !important;
+    align-items: flex-start !important;
+  }
+
+  .draw{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .canvas{
+    top: 70px;
+  }
+
+  .drawSvg{
+    top: 0;
+  }  
+
+  .mobile{
+    display: flex;
+  }
+
+  .draw .buttons{
+    position: fixed;
+    top: 0;
+    height: 56px;
+    width: 100%;
+    padding: 0;
+    padding-top: 12px;
+    margin: 0;
+    justify-content: flex-start;
+    background: #2E2F30;
+    z-index: 2;
+  }
+
+  .draw .buttons .btn{
+    margin-left: 12px;
+  }
+
+  .draw .toolbar{
+    position: relative;
+    top: auto;
+    transform: translateY(0);
+    right: 0 !important;
+    width: 100%;
+    margin-top: 60px;
+    padding: 0;
+  }
+
+  .draw .toolbar ul{
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #434345;
+  }
+
+  .draw .toolbar li{
+    margin: auto;
+  }
+
+  .allColors{
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .draw .toolbar .allColors ul{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .draw .toolbar .activeColor{
+    position: absolute;
+    top: 40px;
+    margin-right: 12px;
+  }
+
+  .lineColor .activeColor{
+    right: 35%;
+  }
+
+  .bgColor .activeColor{
+    left: 35%;
+  }
+
+  .draw .toolbar .activeColor::after{
+    display: none;
+  }
+
+  .wrap .draw .buttons .btn{
+    margin-top: 0;
+    border: none;
+    font-size: 18px;
+    margin: auto;
+    margin-left: 12px;
+  }
+
+  .draw .buttons .undoBtn{
+    top: -4px;
+    margin: auto;
+    margin-right: 24px;
+  }
+
+  #cursor{
+    display: none;
+  }
+  .drawSvg, .canvas{
+    width: 100%;
+    height: 360px;
+    box-sizing: border-box;
+  }
+
+   .action .canvas .drawSvg{
+    width: 100%;
+    height: 360px;
+    max-height: 100%;
+  }
+
+  .drawUi{
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .drawUi ul{
+    display: flex;
+    margin: 0;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .drawUi ul li{
+    margin: 6px;
+  }
+
+
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="30px" viewBox="0 0 28 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>clear</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Canvas" transform="translate(-406.000000, -226.000000)" stroke="#FFFFFF" stroke-width="1.4">
+            <g id="clear" transform="translate(406.000000, 226.000000)">
+                <rect id="Rectangle" x="6.7" y="0.7" width="14.1" height="3.53197279" rx="1.4"></rect>
+                <rect id="Rectangle-Copy-2" x="0.7" y="4.64557823" width="26.6" height="3.53197279" rx="1.4"></rect>
+                <path d="M24.5,8.58163265 L24.5,27.1751701 C24.5,27.9650875 23.8731986,28.6054422 23.1,28.6054422 L5.4,28.6054422 C4.62680135,28.6054422 4,27.9650875 4,27.1751701 L4,8.58163265" id="Path" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="32.9,4.199999999999999"></path>
+                <path d="M9.25,8.38435374 L9.25,20.3843537" id="Path-7" stroke-linecap="round"></path>
+                <path d="M14.1902324,8.38435374 L14.1902324,20.3843537" id="Path-7-Copy" stroke-linecap="round"></path>
+                <path d="M19.1902324,8.38435374 L19.1902324,20.3843537" id="Path-7-Copy-2" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
