@@ -42,7 +42,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 #### Known problems
 - When cursor comes out of canvas container, it throws error - but it doesn't affect functionality
-- If not scrolled to the top, mouse cursor distance is not calculated correctly and trace path appears in the wrong place
+- If not scrolled to the top, mouse cursor distance isn't calculated correctly and trace path appears in a wrong place
 
 #### Based on tomhodgins gist
 https://gist.github.com/tomhodgins/bffcc0dce83f2d593afc
