@@ -6,7 +6,7 @@ Draw with mouse or fingers vector SVG paths.
 - Works fine on mobile and desktop
 - Canvas size defined with css
 
-Made for VueJS. 
+Made for VueJS ❤️
 
 ![Svg pencil Draw Vuejs in browser](https://artrayd.com/freehand-svg/freehand-svg-ui.png)
 
