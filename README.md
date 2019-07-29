@@ -2,7 +2,7 @@
 Draw with mouse or fingers vector SVG paths. 
 
 - Basic functionality, just colors and fixed brush width
-- Minimal user interface with undo, clearn and download buttons
+- Minimal user interface with undo, clear and download buttons
 - Works fine on mobile and desktop
 - Canvas size defined with css
 
