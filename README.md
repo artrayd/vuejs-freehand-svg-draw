@@ -8,7 +8,7 @@ Draw with mouse or fingers vector SVG paths.
 
 Made for VueJS ❤️
 
-![Svg pencil Draw Vuejs in browser](https://artrayd.com/freehand-svg/freehand-svg-ui.png)
+![Svg pencil Draw Vuejs in browser](https://artrayd.com/freehand-svg/freehand-ui.png)
 
 # Demo
 https://artrayd.com/freehand-svg/
